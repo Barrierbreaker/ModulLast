@@ -27,6 +27,9 @@ middle {
 }
 
 .wrapl {
+    .pict1 {
+        align-content: center;
+    }
     h2 {
         text-align: center;
         align-content: center;
@@ -167,3 +170,69 @@ body>middle>div>img {
     margin-left: 49%;
     margin-top: 2%;
 }
+
+.bottonline {
+    background-color: #9f9acf;
+    width: 350px;
+    height: 70px;
+    ul {
+        padding-top: 5%;
+        margin-left: -40px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        li {
+            margin: 0 2%;
+        }
+    }
+}
+.kvadrat:hover{
+    animation: kvadrat 2s 1s infinite ease-in-out;}
+@keyframes kvadrat {
+   50% {background-color: red;
+        transform: perspective(300px) rotateX(-180deg)
+    }
+    100% {background-color: blue;
+        transform: perspective(300px) rotateY(-179.9deg);
+    }
+}
+
+.sl1_slide:hover{ 
+    transform: scale(1.1);
+}
+
+
+.kvadrokrug:hover{
+    animation:kvadrokrug 3s 2s infinite alternate;
+
+    background-color: green;
+}
+
+@keyframes kvadrokrug {
+   
+    25% {
+    transform: rotate(45deg);
+        border-radius: 50px 0px 0px 0px;
+    background-color: red;
+    }
+    50% {
+    transform: rotate(90deg);
+        background-color: yellow;
+      border-radius: 50px 50px 0px 0px;
+    }
+    75% {
+    transform: rotate(135deg);
+        background-color: black;
+        border-radius: 150px 150px 150px 0px;
+    }
+ 100% {
+    transform: rotate(180deg);
+        background-color: yellow;
+      border-radius: 150px 150px 150px 150px;
+    }
+}
+
+
+.flex-item:hover{border:1px solid red;
+background: aquamarine;}
